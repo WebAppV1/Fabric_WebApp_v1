@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FcBusinesswoman } from "react-icons/fc";
+import { FaShippingFast } from "react-icons/fa";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className=" border-gray-200 bg-[#f6c389] text-[#2c2f48]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-1">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -23,7 +24,7 @@ const Navbar = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Persona Finery 
+            Persona Finery
           </span>
         </a>
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -36,7 +37,7 @@ const Navbar = () => {
           >
             <span className="sr-only">Open user menu</span>
             <div className="w-8.5 h-8.5 m-1.2 rounded-full flex items-center justify-center ">
-              <FcBusinesswoman size={24}/>
+              <FcBusinesswoman size={24} />
             </div>
           </button>
           {dropdownOpen && (
@@ -58,7 +59,7 @@ const Navbar = () => {
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
-                   Your Orders
+                    Your Orders
                   </a>
                 </li>
                 <li>
@@ -119,11 +120,11 @@ const Navbar = () => {
           }`}
           id="navbar-user"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                className="block py-2 px-3 text-[#2c2f48] bg-transparent rounded md:bg-transparent md:text-[#2c2f48] md:p-0 hover:text-[#6e8fb9] md:hover:text-[#6e8fb9] md:dark:text-[#2c2f48]"
                 aria-current="page"
               >
                 Home
@@ -132,7 +133,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Kurtis
               </a>
@@ -140,7 +141,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Discount's
               </a>
@@ -148,7 +149,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 About
               </a>
@@ -156,12 +157,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex justify-center items-center gap-1 py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Contact
+                <FaShippingFast /> Track Order's
               </a>
             </li>
-          </ul>
+          </ul>   
         </div>
       </div>
     </nav>
