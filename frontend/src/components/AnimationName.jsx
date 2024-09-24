@@ -1,5 +1,5 @@
 import React from "react";
-import "./animation.css"
+import "./styles/animation.css"
 
 const AnimationName = () => {
   

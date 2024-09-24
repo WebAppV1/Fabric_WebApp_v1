@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FcBusinesswoman } from "react-icons/fc";
 import { FaShippingFast } from "react-icons/fa";
+import { TbShoppingCartShare } from "react-icons/tb";
+import { GiAmpleDress } from "react-icons/gi";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" border-gray-200 bg-[#f6c389] text-[#2c2f48]">
+    <nav className="border-gray-200 bg-[#f6c389] text-[#2c2f48] w-full">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-1">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -23,14 +25,17 @@ const Navbar = () => {
             className="h-16"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span
+            style={{ fontFamily: "-moz-initial" }}
+            className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white"
+          >
             Persona Finery
           </span>
         </a>
         <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"
+            className="flex text-sm bg-gray-800 rounded-full focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"
             id="user-menu-button"
             aria-expanded={dropdownOpen}
             onClick={toggleDropdown}
@@ -41,10 +46,7 @@ const Navbar = () => {
             </div>
           </button>
           {dropdownOpen && (
-            <div
-              className="z-50 mx- my-6 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-              id="user-dropdown"
-            >
+            <div className="z-50 my-6 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600">
               <div className="px-4 py-3">
                 <span className="block text-sm text-gray-900 dark:text-white">
                   Bonnie Green
@@ -54,6 +56,7 @@ const Navbar = () => {
                 </span>
               </div>
               <ul className="py-2" aria-labelledby="user-menu-button">
+                {/* Dropdown Items */}
                 <li>
                   <a
                     href="#"
@@ -65,9 +68,9 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
-                    Carts
+                    Track Order's <FaShippingFast />
                   </a>
                 </li>
                 <li>
@@ -121,6 +124,7 @@ const Navbar = () => {
           id="navbar-user"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+            {/* Nav Items */}
             <li>
               <a
                 href="#"
@@ -133,9 +137,9 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex items-center gap-1 py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Kurtis
+                <GiAmpleDress /> Kurtis
               </a>
             </li>
             <li>
@@ -143,7 +147,7 @@ const Navbar = () => {
                 href="#"
                 className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Discount's
+                Discounts
               </a>
             </li>
             <li>
@@ -157,12 +161,17 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="flex justify-center items-center gap-1 py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                <FaShippingFast /> Track Order's
+                <TbShoppingCartShare
+                  size={25}
+                  onClick={() => {
+                    setNavOpen(false);
+                  }}
+                />
               </a>
             </li>
-          </ul>   
+          </ul>
         </div>
       </div>
     </nav>
