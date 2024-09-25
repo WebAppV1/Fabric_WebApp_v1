@@ -1,52 +1,63 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import "../components/styles/cursor.css";
+import "../components/styles/animation.css";
 
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const ImageBody = ({ data }) => {
-  const [slide, Setslide] = useState(0);
+  const [slide, setSlide] = useState(0);
+  
   const nextSlide = () => {
-    Setslide(slide === data.length - 1 ? 0 : slide + 1);
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    Setslide(slide === 0 ? data.length - 1 : slide - 1);
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
+
+  
+  const handleClassNames = (idx) => {
+    if (slide === idx) return "slide current";
+    if (slide === idx - 1 || (slide === 0 && idx === data.length ))
+      return "slide next";
+    if (slide === idx + 1 || (slide === data.length  && idx === 0))
+      return "slide prev";
+    return "slide-hidden";
+  };
+
+  
 
   return (
     <div className="ImageProvider">
-      <div className="carousel">
+      <div className="carousel"  >
         <BsArrowLeftCircleFill
-          className="arrow arrow-left "
+          className="arrow arrow-left"
           onClick={prevSlide}
         />
-        {data.map((item, idx) => {
-          return (
-            <img
-              src={item.src}
-              alt={item.alt}
-              key={idx}
-              className={slide === idx ? "slide" : "slide-hidden"}
-            />
-          );
-        })}
+        {data.map((item, idx) => (
+          <img
+           
+            src={item.src}
+            alt={item.alt}
+            key={idx}
+            className={handleClassNames(idx)}
+          />
+        ))}
         <BsArrowRightCircleFill
           className="arrow arrow-right"
           onClick={nextSlide}
         />
         <span className="indicators">
-          {data.map((_, idx) => {
-            return (
-              <button
-                key={idx}
-                onClick={() => {
-                  Setslide(idx);
-                }}
-                className={slide === idx ? "indicator" : "indicator-inactive"}
-              ></button>
-            );
-          })}
+          {data.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setSlide(idx)}
+              className={
+                slide === idx ? "indicator" : "indicator indicator-inactive"
+              }
+            ></button>
+          ))}
         </span>
       </div>
     </div>

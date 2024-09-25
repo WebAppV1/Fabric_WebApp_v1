@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-gray-200 bg-[#f6c389] text-[#2c2f48] w-full">
+    <nav className="border-gray-200 bg-[#f6c389] text-[#2c2f48] w-full  ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-1">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
