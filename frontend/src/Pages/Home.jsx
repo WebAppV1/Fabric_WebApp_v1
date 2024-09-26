@@ -6,7 +6,7 @@ import Kruti from "../components/Kruti";
 import { slides } from "../utils/cursorData.json";
 import Krutis from "../components/Krutis";
 
-import Test from "../Test";
+// import Test from "../Test";
 
 const Home = () => {
   return (
