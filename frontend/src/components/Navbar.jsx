@@ -129,6 +129,9 @@ const Navbar = () => {
               <a
                 href="#"
                 className="block py-2 px-3 text-[#2c2f48] bg-transparent rounded md:bg-transparent md:text-[#2c2f48] md:p-0 hover:text-[#6e8fb9] md:hover:text-[#6e8fb9] md:dark:text-[#2c2f48]"
+                onClick={() => {
+                  setNavOpen(false);
+                }}
                 aria-current="page"
               >
                 Home
@@ -138,6 +141,9 @@ const Navbar = () => {
               <a
                 href="#"
                 className="flex items-center gap-1 py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                onClick={() => {
+                  setNavOpen(false);
+                }}
               >
                 <GiAmpleDress /> Kurtis
               </a>
@@ -146,6 +152,9 @@ const Navbar = () => {
               <a
                 href="#"
                 className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                onClick={() => {
+                  setNavOpen(false);
+                }}
               >
                 Discounts
               </a>
@@ -154,6 +163,9 @@ const Navbar = () => {
               <a
                 href="#"
                 className="block py-2 px-3 text-[#2c2f48] rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-[#6e8fb9] md:p-0 dark:text-[#2c2f48] md:dark:hover:text-[#6e8fb9] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                onClick={() => {
+                  setNavOpen(false);
+                }}
               >
                 About
               </a>

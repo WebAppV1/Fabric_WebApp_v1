@@ -5,8 +5,8 @@ import AnimationName from "../components/AnimationName";
 import Kruti from "../components/Kruti";
 import { slides } from "../utils/cursorData.json";
 import Krutis from "../components/Krutis";
+import Footer from "../components/Footer";
 
-// import Test from "../Test";
 
 const Home = () => {
   return (
@@ -15,8 +15,8 @@ const Home = () => {
       {/* Navbar is successfully created */}
       <AnimationName />
       <ImageBody data={slides} />
-      {/* <Krutis /> */}
-      {/* <Test/> */}
+      <Krutis />
+      <Footer/>
     </div>
   );
 };

@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'footer-bg': '#ded4ca',
         'custom-pink': '#feecde', // Use 1 for full opacity
       },
     },
