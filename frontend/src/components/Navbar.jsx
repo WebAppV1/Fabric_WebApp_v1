@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-1">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="../../assets/logo.png"
+            src="https://res.cloudinary.com/df4ibwoj5/image/upload/v1727697986/logo_m7i1qe.png"
             className="h-16"
             alt="Flowbite Logo"
           />

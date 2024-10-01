@@ -1,51 +1,43 @@
 {
   "KrutiPRo": [
     {
-      "url": "../../assets/Krutis_images/Desiner.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775105/krutis_images/am2gnymvsqo68eanzlmc.png",
       "name": "Designer Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/Cotton.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775094/krutis_images/plmoxq6uds9podcy6khj.png",
       "name": "cotton Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/green-kurti.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775081/krutis_images/bjaqpbaxrhzuwv3foz5m.png",
       "name": "Printed Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/Party.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775100/krutis_images/fsrhisrhuewqo6qebhqf.png",
       "name": "Party Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/Desiner.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775523/krutis_images/njkmsollj6ffts665fro.png",
       "name": "Designer Kruti"
-    },
-    {
-      "url": "../../assets/Krutis_images/Cotton.png",
-      "name": "cotton Kruti"
-    },
-    {
-      "url": "../../assets/Krutis_images/green-kurti.png",
-      "name": "Printed Kruti"
-    },
-    {
-      "url": "../../assets/Krutis_images/Party.png",
-      "name": "Party Kruti"
     },{
-      "url": "../../assets/Krutis_images/Desiner.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775105/krutis_images/am2gnymvsqo68eanzlmc.png",
       "name": "Designer Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/Cotton.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775094/krutis_images/plmoxq6uds9podcy6khj.png",
       "name": "cotton Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/green-kurti.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775081/krutis_images/bjaqpbaxrhzuwv3foz5m.png",
       "name": "Printed Kruti"
     },
     {
-      "url": "../../assets/Krutis_images/Party.png",
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775100/krutis_images/fsrhisrhuewqo6qebhqf.png",
       "name": "Party Kruti"
+    },
+    {
+      "url": "https://res.cloudinary.com/df4ibwoj5/image/upload/v1727775523/krutis_images/njkmsollj6ffts665fro.png",
+      "name": "Designer Kruti"
     }
   ]
 }
