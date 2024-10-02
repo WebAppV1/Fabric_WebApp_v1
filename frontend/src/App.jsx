@@ -1,15 +1,18 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './Pages/Home'
+import { useState } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import AnimationName from "./components/AnimationName";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <>
-      <Home/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route exact path="/GetStarted" element={<Home />} />
+        <Route exact path="/" element={<AnimationName />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

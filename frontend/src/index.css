@@ -12,4 +12,8 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Standard syntax */
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/013/225/831/non_2x/design-banner-frame-background-colorful-poster-background-illustration-exotic-plants-branches-art-print-for-beauty-fashion-and-natural-products-wellness-wedding-and-event-free-vector.jpg');
+  background-size: cover;
+  background-position: center; */
+  
 }

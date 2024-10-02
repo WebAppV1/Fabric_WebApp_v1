@@ -169,6 +169,10 @@
   .slide {
     width: 100%;
   }
+  #logo{
+    height: 10vh;
+    width: 80vw;
+  }
 
   .prev,
   .next {
