@@ -10,6 +10,13 @@ const Kruti = ({ urls, Title }) => {
         className="h-30 w-full md:w-80 object-cover rounded-lg"
       />
       <h1 className="font-serif font-bold text-center mt-4">{Title}</h1>
+      <div class="flex justify-center items-baseline my-8">
+        <span class="mr-2 text-2xl font-extrabold">$29</span>
+        <span class="text-gray-500 dark:text-gray-400">/Offer</span>
+      </div>
+      <button class="bg-transparent border border-gray-800 text-gray-800 font-serif text-lg tracking-wide py-3 px-8 rounded-full hover:bg-gray-800 hover:text-white transition-all duration-300 ease-in-out shadow-md">
+        Buy Now
+      </button>
     </div>
   );
 };

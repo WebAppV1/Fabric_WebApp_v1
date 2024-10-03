@@ -5,6 +5,7 @@ import AnimationName from "../components/AnimationName";
 import Krutis from "../components/Krutis";
 import Footer from "../components/Footer";
 import { slides } from "../utils/cursorData.json";
+import UniqueClothingCarousel from "../components/UniqueClothingCarousel";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Navbar />
       <ImageBody data={slides} />
       <Krutis />
+      <UniqueClothingCarousel/>
       <Footer />
     </>
   );
