@@ -2,6 +2,10 @@
   border: 2px solid rgba(0, 0, 0, 0.196);
   margin:1rem 1rem 0rem 1rem;
   height: 90vh;
+  background-image: url("https://img.freepik.com/premium-photo/clothes-grunge-background-shelf-cream-background-collection-clothes-hanging-rack_576429-1175.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #logo {
   fill: none;

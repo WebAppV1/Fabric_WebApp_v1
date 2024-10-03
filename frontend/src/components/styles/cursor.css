@@ -10,7 +10,9 @@
 .wrap {
   border-right: 0.08em solid #666;
 }
-
+.mate{
+  height: 20vh;
+}
 .carousel {
   position: relative;
   display: flex;
@@ -120,6 +122,14 @@
   .next {
     transform: scale(0.6);
   }
+  #logo{
+    height: 10vh;
+    width: 80vw;
+  }
+  .mate{
+    height: 20vh;
+
+  }
 }
 
 @media (max-width: 768px) {
@@ -135,6 +145,14 @@
   .prev,
   .next {
     transform: scale(0.5);
+  }
+  #logo{
+    height: 10vh;
+    width: 80vw;
+  }
+  .mate{
+    height: 20vh;
+
   }
 }
 
@@ -157,6 +175,14 @@
     width: 1.5rem;
     height: 1.5rem;
   }
+  #logo{
+    height: 10vh;
+    width: 80vw;
+  }
+  .mate{
+    height: 20vh;
+
+  }
 }
 
 @media (max-width: 325px) {
@@ -172,6 +198,11 @@
   #logo{
     height: 10vh;
     width: 80vw;
+    
+  }
+  .mate{
+    height: 20vh;
+
   }
 
   .prev,
