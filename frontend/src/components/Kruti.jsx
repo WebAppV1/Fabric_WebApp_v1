@@ -7,7 +7,7 @@ const Kruti = ({ urls, Title }) => {
       <img
         src={urls}
         alt="cotton krutis"
-        className="h-30 w-full md:w-80 object-cover rounded-lg"
+        className="h-30 w-full md:w-80  rounded-lg"
       />
       <h1 className="font-serif font-bold text-center mt-4">{Title}</h1>
       <div class="flex justify-center items-baseline my-8">

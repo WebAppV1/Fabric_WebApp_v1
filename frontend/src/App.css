@@ -1,0 +1,27 @@
+/* Custom scrollbar for webkit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: #fad195; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb:hover {
+  background: #f1a739; /* Color of the scrollbar thumb on hover */
+}
+
+/* Custom scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: thin;
+  scrollbar-color: #e68d20 #f1f1f1;
+}
+
+.scrollbar-hide:hover {
+  scrollbar-color: #555 #f1f1f1;
+}
